@@ -13,15 +13,80 @@
   max-width: 90vw;
   margin: 0 auto;
 }
+
 .img {
   width: 30rem;
   object-fit: cover;
   border-radius: 5px;
 }
 
+/* navbar */
+.navbar {
+  height: 4.5rem;
+  position: fixed;
+  top: 20;
+  left: 20;
+  width: 100%;
+  z-index: 5;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-center {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.icon {
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  border: 3px solid #339933;
+  border-radius: 20px;
+}
+
+.icon span {
+  color: #339933;
+  letter-spacing: 1px;
+}
+
+.navbar-links {
+  margin-right: 2rem;
+}
+.navbar-link {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #339933;
+}
+@media screen and (max-width: 992px) {
+  .icon {
+    font-size: 1rem;
+    margin-left: 0;
+  }
+  .navbar-link {
+    font-size: 1rem;
+    margin-right: 5px;
+  }
+
+  .navbar {
+    height: 3rem;
+  }
+  .nav-center {
+    align-self: center;
+    justify-content: space-between;
+  }
+  .navbar-links {
+    margin-right: 0;
+  }
+}
+/* end of navbar */
+
 /*header*/
 .header-section {
   height: 100vh;
+  min-height: calc(100vh - 5rem);
   background: linear-gradient(
       rgba(255, 255, 255, 0.3),
       rgba(255, 255, 255, 0.3)
@@ -83,7 +148,8 @@ h2 {
 /*end of header*/
 
 /* galeria section*/
-.article-galery {
+
+.green-backround {
   background-color: #d4edd8;
   padding-bottom: 2rem;
 }
@@ -152,6 +218,20 @@ h2 {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .img {
+    width: 18rem;
+  }
+  .galeria-text {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    z-index: 2;
+    color: #d4edd8;
+  }
+}
 /* end of galeria section*/
 
 /* about us section*/
