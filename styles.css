@@ -32,6 +32,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 2px 3px rgba(0, 0, 0, 0.1);
 }
 
 .nav-center {
@@ -423,3 +424,14 @@ h2 {
   }
 }
 /*end of footer section*/
+
+/* ============================================ */
+/* Galeria page */
+.Galeria-page .title {
+  padding-top: 5rem;
+}
+.Galeria-page {
+  margin-bottom: 2rem;
+}
+/* end of Galeria page */
+/* ============================================ */
