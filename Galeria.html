@@ -4,19 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galéria</title>
+    <title>Vacho Farm</title>
+
+    <link
+   rel="stylesheet"
+   href="./fontawesome-free-5.12.1-web/css/all.min.css"
+ />
+
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <nav>
-       <div class="navbar">
-           <div class="icon">
-                Vacho <span>Farm</span>
-           </div>
-           <div class="navbar-links">
-               <a href="Galeria.html#Domov">Domov</a>
-               <a href="Galeria.html##O-nas">O nás</a>
-           </div>
-       </div> 
-    </nav>
+   <!-- navbar -->
+   <nav>
+    <div class="navbar">
+        <div class="nav-center">
+            <div class="icon">
+                <H2>Vacho <span>Farm</span></H2>
+            </div>
+        </div>
+        <div class="nav-center">
+            <div class="navbar-links">
+                <a class="navbar-link" href="./index.html">Domov</a>
+                <a class="navbar-link" href="">Čo ponúkame</a>
+                <a class="navbar-link" href="">O prestovaní</a>
+                <a class="navbar-link" href="./Galeria.html">Galéria</a>
+            </div>
+            <div class="nav-header">
+                <button class="nav-btn" id="nav-btn">
+                    <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </div> 
+ </nav>
+<!-- end of navbar -->
+
+
+     <!-- sidebar -->
+     <aside class="sidebar" id="sidebar">
+        <div class="sidebar-section">
+            <div class="sidebar-title title">
+               <button class="close-btn" id="close-btn">
+                   <i class="fas fa-times"></i>
+                 </button>
+                <h1 class="sidebar-title">Navigačný panel</h1>
+            </div>
+            <div class="sidebar-links">
+               <a class="sidebar-link" href="./index.html">Domov</a>
+               <a class="sidebar-link" href="">Čo ponúkame</a>
+               <a class="sidebar-link" href="">O prestovaní</a>
+               <a class="sidebar-link" href="./Galeria.html">Galéria</a>
+            </div>
+            <div class="social-media-links">
+               <a href="https://www.facebook.com/Kvety-Naty-663953343757806/" class="fab fa-facebook link" target="_blank"></a>
+               <a href="https://www.instagram.com/kvetynaty/" class="fab fa-instagram link"target="_blank" ></a>
+            </div>
+        </div>
+    </aside>
+    <!-- end of sidebar -->
+
+        
+
+            <!-- footer -->
+            <footer>
+                <div class="footer-section">
+                    <div class="footer-kontakt">
+                        <p><span>Email:</span> kvetynaty@gmail.com</p>
+                        <p> <span>Tel. číslo:</span> +421.......</p>
+                    </div>
+                    <div class="footer-link-section">
+                        <p>Nájdete nás na</p>
+                        <a href="https://www.facebook.com/Kvety-Naty-663953343757806/" class="fab fa-facebook link" target="_blank"></a>
+                        <a href="https://www.instagram.com/kvetynaty/" class="fab fa-instagram link"target="_blank" ></a>
+                    </div>
+                    <p class="copyright">Copyright <span>&#169;</span> 2022 </p>
+                </div>
+            </footer>
+            <!-- end of footer -->
+            <script src="./app.js"></script>
 </body>
 </html>
