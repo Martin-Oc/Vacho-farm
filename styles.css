@@ -20,6 +20,20 @@
   border-radius: 5px;
 }
 
+.button {
+  display: table;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  border: 1px solid #77c934;
+  border-radius: 30px;
+  background-color: #77c934;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 2.2rem;
+  margin-bottom: 2rem;
+}
+
 /* navbar */
 .navbar {
   height: 4.5rem;
@@ -272,19 +286,6 @@ h2 {
   color: #d4edd8;
   z-index: 3;
 }
-.vstup-do-galerie {
-  display: table;
-  text-decoration: none;
-  font-size: 1.5rem;
-  color: white;
-  border: 1px solid #77c934;
-  border-radius: 30px;
-  background-color: #77c934;
-  padding: 10px;
-  margin: 0 auto;
-  margin-top: 2.2rem;
-  margin-bottom: 2rem;
-}
 
 @media screen and (min-width: 992px) {
   .Galeria {
@@ -380,8 +381,24 @@ h2 {
   display: block;
   margin: 0 auto;
 }
+/* end of kvetostanok */
 
-/* emd of kvetostanok */
+/* Co-ponukame */
+.ponuka-sekcie {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 2rem;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.ponuka-img {
+  max-width: 276px;
+}
+.sekcia {
+  max-width: 320px;
+}
+
+/* end ofCo-ponukame */
 
 /*footer section*/
 .footer-section {
