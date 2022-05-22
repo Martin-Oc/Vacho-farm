@@ -34,7 +34,7 @@
   margin-bottom: 2rem;
   transition: 0.1s linear;
 }
-button:hover {
+.button:hover {
   background-color: #339933;
   border: 1px solid #339933;
   color: black;
@@ -336,6 +336,7 @@ h2 {
   text-align: center;
   font-family: var(--font-family);
   font-size: var(--font-size);
+  letter-spacing: 2px;
 }
 
 .about-us-text {
@@ -480,4 +481,28 @@ h2 {
   margin-bottom: 2rem;
 }
 /* end of Galeria page */
+/* ============================================ */
+
+/* ============================================ */
+/* Co-ponukame page */
+
+.kytice {
+  padding-top: 3rem;
+}
+
+.co-ponukame-section {
+  padding-bottom: 2rem;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.co-ponukame-text p {
+  font-size: 1.5rem;
+}
+.co-ponukame-text img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+/* end of Co-ponukame page */
 /* ============================================ */
