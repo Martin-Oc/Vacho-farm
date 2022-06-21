@@ -270,7 +270,7 @@ h2 {
   transform: scale(1.2);
 }
 
-.sekcia {
+.obrazok-galeria {
   position: relative;
 }
 
@@ -506,3 +506,66 @@ h2 {
 
 /* end of Co-ponukame page */
 /* ============================================ */
+
+/* modal */ 
+
+body{
+  position: relative;
+}
+.modal{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+.modal-close{
+  position: fixed;
+  top: 2.5%;
+  right: 2.55%;
+  color: white;  
+  size: 5rem;
+  font-size: 3rem;
+  border: none; 
+  background-color: rgba(0, 0, 0, 0);
+} 
+
+#image-modal{
+max-height: 50rem;
+border-radius: 5px;
+}
+
+#close-btn-modal:hover {
+  transition:  0.5s linear;
+  transform: scale(1.2);
+  color: red;
+} 
+  
+.image-modal{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+.open{
+  display: block;
+}
+
+
+@media screen and (max-width: 700px) {
+  #image-modal{
+    max-height: 35rem;
+
+    }
+  }
+
+@media screen and (max-width: 600px) {
+  #image-modal{
+    max-height: 25rem;
+
+    }
+}
+/* end of modal */ 
