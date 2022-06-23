@@ -69,4 +69,18 @@ function ClassModalOPen() {
   this.closeModalBtn = document.querySelector("#close-btn-modal")
   this.modalText = document.querySelector("#text-modal")
   this.modalTextDiv = document.querySelector(".modal-text")
+  let self = this
+
+  //this.closeModal = this.closeModal.bind(this);
+
+  this.openModal = this.openModal.bind(this)
   }
+
+  ClassModalOPen.prototype.openModal = function(){
+    console.log("ahoj")
+    this.obrazokGaleria.forEach(function(image){ 
+      image.addEventListener("click", console.log("ahoj"))
+    })
+  }
+  
+  const OpenModal = new ClassModalOPen
