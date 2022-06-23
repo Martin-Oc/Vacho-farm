@@ -16,7 +16,7 @@ date.innerHTML = datum
 
 
 //modal
-
+/*
 const obrazokGaleria = document.querySelectorAll("#img-galeria")
 const modal = document.querySelector(".modal")
 const modalObrazok = document.querySelector("#image-modal")
@@ -57,7 +57,16 @@ function OpenModal(e){
   })
 
 }
+*/
 //end modal
 
 
 
+function ClassModalOPen() {
+  this.obrazokGaleria = document.querySelectorAll("#img-galeria")
+  this.modal = document.querySelector(".modal")
+  this.modalObrazok = document.querySelector("#image-modal")
+  this.closeModalBtn = document.querySelector("#close-btn-modal")
+  this.modalText = document.querySelector("#text-modal")
+  this.modalTextDiv = document.querySelector(".modal-text")
+  }
