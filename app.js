@@ -94,8 +94,8 @@ function ClassModalOPen(element) {
       console.log(this.bottomImage)
       this.thistextposition = this.bottomImage + 20
       console.log(this.thistextposition)
-      this.modalTextDiv.style.top = `${this.textposition}px`;
-      console.log(this.modalTextDiv.style)
+      this.modalTextDiv.style.top = `${this.thistextposition}px`;
+      console.log(this.modalTextDiv)
     }.bind(this))
   }
 
