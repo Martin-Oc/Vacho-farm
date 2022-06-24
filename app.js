@@ -62,25 +62,59 @@ function OpenModal(e){
 
 
 
-function ClassModalOPen() {
+function ClassModalOPen(element) {
   this.obrazokGaleria = document.querySelectorAll("#img-galeria")
   this.modal = document.querySelector(".modal")
   this.modalObrazok = document.querySelector("#image-modal")
   this.closeModalBtn = document.querySelector("#close-btn-modal")
   this.modalText = document.querySelector("#text-modal")
   this.modalTextDiv = document.querySelector(".modal-text")
-  let self = this
+  this.container = document.querySelector(".galeria-section")
 
-  //this.closeModal = this.closeModal.bind(this);
-
-  this.openModal = this.openModal.bind(this)
+  const returnedValue = this.openModal()
+  const closemodal = this.closModal()
   }
 
   ClassModalOPen.prototype.openModal = function(){
-    console.log("ahoj")
-    this.obrazokGaleria.forEach(function(image){ 
-      image.addEventListener("click", console.log("ahoj"))
-    })
+
+    this.container.addEventListener("click",function(e){
+      this.target = e.target.src
+      this.targetname = e.target.nextElementSibling.textContent
+
+      //open modal  
+      this.modal.classList.add("open")
+      this.modalObrazok.src = this.target
+       
+     //meno obrazku 
+     const currentImageName = e.target.nextElementSibling.innerHTML
+     this.modalText.innerHTML = this.targetname
+
+      //pozicia nazvu obrazku
+      this.bottomImage = this.modalObrazok.getBoundingClientRect().bottom
+      console.log(this.bottomImage)
+      this.thistextposition = this.bottomImage + 20
+      console.log(this.thistextposition)
+      this.modalTextDiv.style.top = `${this.textposition}px`;
+      console.log(this.modalTextDiv.style)
+    }.bind(this))
   }
+
+  ClassModalOPen.prototype.closModal = function(){
+    //close modal with button
+    if(this.modal){
+      this.closeModalBtn.addEventListener("click",function(){
+        this.modal.classList.remove("open")
+      }.bind(this))}
+
+      //close modal iwh tab on background
+      this.modal.addEventListener("click",function(e){
+        const clickonbackground = e.target
+          if(clickonbackground == this.modal){
+            this.modal.classList.remove("open")
+          }
+      }.bind(this))
+  }
+
+  const OpenModal = new ClassModalOPen(document.querySelector("#Galeria"))
+
   
-  const OpenModal = new ClassModalOPen
