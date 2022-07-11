@@ -44,8 +44,8 @@ function OpenModal(e){
   modalText.innerHTML = currentImageName
 
   //pozicia nazvu obrazku
-  const bottomImage = modalObrazok.getBoundingClientRect().bottom
-  const textposition = bottomImage + 20
+  const topImage = modalObrazok.getBoundingClientRect().top
+  const textposition = topImage - 50
   modalTextDiv.style.top = `${textposition}px`;
   
   //close modal iwh tab on background

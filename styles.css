@@ -18,6 +18,14 @@
   width: 30rem;
   object-fit: cover;
   border-radius: 5px;
+
+}
+
+#Galeria .img {
+  cursor: pointer;
+}
+.Galeria .img {
+  cursor: pointer;
 }
 
 .button {
@@ -546,7 +554,7 @@ border-radius: 5px;
   
 .image-modal{
   position: fixed;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50% , -50%);
 }
@@ -561,6 +569,8 @@ border-radius: 5px;
   color: white;
   
 }
+
+
 
 
 
