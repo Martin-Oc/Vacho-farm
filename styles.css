@@ -274,9 +274,9 @@ h2 {
   transition: 0.5s linear;
 }
 
-.galeria-section img:hover {
+/* .galeria-section img:hover {
   transform: scale(1.2);
-}
+} */
 
 .obrazok-galeria {
   position: relative;
@@ -284,12 +284,13 @@ h2 {
 
 .galeria-text {
   position: absolute;
-  top: 350px;
+  top: 300px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 2rem;
   z-index: 2;
   color: #d4edd8;
+  pointer-events: none;
 }
 .hide {
   display: none;
@@ -529,6 +530,7 @@ body{
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 10;
+  overflow: hidden;
 }
 .modal-close{
   position: fixed;
@@ -544,6 +546,8 @@ body{
 #image-modal{
 max-height: 50rem;
 border-radius: 5px;
+height: 65vh;
+
 }
 
 #close-btn-modal:hover {
@@ -570,9 +574,68 @@ border-radius: 5px;
   
 }
 
+.modal-images{
+  position: fixed;
+  top: 85%;
+  left: 50%; 
+  transform: translate(-50% , -50%);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  max-width: 70vw;
 
+}
 
+.list-modal{
+  margin: 0.25rem;
+  max-width: 7rem;
+  border-radius: 10px;
+  cursor: pointer;
+  filter: brightness(60%);
+  transition: all 0.25s ease;
+}
 
+.list-modal:hover{
+  filter: brightness(100%);
+}
+
+.active{
+  filter: none;
+  transform: translateY(-20px);
+}
+
+.fa-caret-left{
+  position: absolute;
+}
+
+.modal-buttons{
+  position: fixed;
+  top:40%;
+  height: 5rem;
+  width: 5rem;
+  font-size: 3rem;
+  color: white;
+  width: 100vw;
+
+}
+
+.arrow-left{  
+  background:transparent;
+  border: none;
+  font-size: 3rem;
+  color: white;
+  position: fixed;
+  left: 5%;
+}
+
+.arrow-right{
+  background:transparent;
+  border: none;
+  font-size: 3rem;
+  color: white;
+  position: fixed;
+  right: 5%;
+}
 
 @media screen and (max-width: 700px) {
   #image-modal{
