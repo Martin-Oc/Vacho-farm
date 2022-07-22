@@ -441,7 +441,7 @@ h2 {
 
 /*footer section*/
 .footer-section {
-  height: 35vh;
+  height: 14rem;
   background-color: #339933;
 
   text-align: center;
@@ -478,7 +478,7 @@ h2 {
 }
 @media screen and (max-width: 992px) {
   .footer-section {
-    height: 25vh;
+    height: 14rem;
   }
 }
 /*end of footer section*/
@@ -496,10 +496,6 @@ h2 {
 
 /* ============================================ */
 /* Co-ponukame page */
-
-.kytice {
-  padding-top: 3rem;
-}
 
 .co-ponukame-section {
   padding-bottom: 2rem;
@@ -678,3 +674,64 @@ transition: all 0.25s ease;
 }
 /* end of modal */ 
 
+/* choosebar */
+/*.choosebar-section{
+  padding-top: 7rem;
+  display: flex;
+  justify-content: center;
+}
+.choose-btn{
+  border: none;
+  background-color: #d4edd8;
+  font-size: 1.2rem; 
+  font-family: var(--font-family);
+  margin-left: 2rem;
+  padding: 0.1rem 2rem;
+  border-radius: 20px;
+} */
+
+.choosebar-section{
+  padding-top: 6rem;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1170px;
+
+}
+.choosebar{
+  border: solid #d4edd8 2px; 
+  border-radius: 20px;
+  transition: all 2s ease;
+  margin-bottom: 2rem;
+}
+
+.choose-btn{
+  width: 30vw;
+  max-width: 380px;
+  background: none;
+  display: inline;
+  border: none;
+  font-family: 'Castoro', serif;
+  font-size: 2rem;
+  transition: all 0.5s ease
+  
+}
+
+.choose-btn:hover{
+   /* background: linear-gradient(white ,#d4edd8 );  */
+  background:#d4edd8;
+  border-radius: 18px;
+  transition: 0.5s ease;
+}
+
+.active2{
+  background:#d4edd8;
+  border-radius: 18px;
+  transition: all ease 0.5s;
+}
+
+.non-active{
+  display: none;
+}
+
+/* end of choosebar */

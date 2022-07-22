@@ -1,5 +1,6 @@
 import "./modal.js"
 
+
 const navBtn = document.querySelector("#nav-btn");
 const closeBtn = document.querySelector("#close-btn");
 const sidebar = document.querySelector("#sidebar");
