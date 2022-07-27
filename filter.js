@@ -1,11 +1,9 @@
 import "./app.js"
-import "./modal.js"
+
 const choose_btns = document.querySelectorAll(".choose-btn")
-const choosebar = document.querySelectorAll(".choosebar")
 const pointer = document.querySelectorAll(".pointer")
 const kyticeSection = document.querySelector("#Kytice")
-const semienkaSection = document.querySelector("#Semienka")
-const plantySection = document.querySelector("#Planty")
+
 
 
 window.addEventListener("DOMContentLoaded",()=>{
@@ -29,7 +27,9 @@ window.addEventListener("DOMContentLoaded",()=>{
     })
 
    if(!filter){
-    kyticeSection.classList.remove("non-active")
+    try {
+        kyticeSection.classList.remove("non-active")
+    } catch (error) {}
    }
 })
 
