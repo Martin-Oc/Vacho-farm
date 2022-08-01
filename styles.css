@@ -977,7 +977,7 @@ font-size: 1.5rem;
     width: 80%;
     display: block;
     margin: 0 auto;
-    margin-bottom:2rem ;
+ 
   }
   .objednaj-kvety{
 
@@ -986,6 +986,13 @@ font-size: 1.5rem;
   .objednaj-kvety .img{
     height: 15rem;  
     width: 65vw;
+  }
+  .price-filter-range{
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 0.2rem;
+    margin-bottom: 2rem;
   }
 }
 .no-matches{

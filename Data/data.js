@@ -1,4 +1,4 @@
-const data = [{name:"Slničnice",cena:"0,05€/ks",obrazok: "./fotky/slnecnice.jpg"},
+const data = [{name:"Slničnice",cena:"0,05€/ks",obrazok: "./fotky/slnecnice.JPG"},
 {name:"Tulipány",cena:"0,05€/ks",obrazok: "./fotky/tulipany.JPG"},
 {name:"Papulky",cena:"0,25€/ks",obrazok: "./fotky/papulky.JPG"},
 {name:"Panicum",cena:"0,05€/ks",obrazok: "./fotky/panicum.jpg"},
