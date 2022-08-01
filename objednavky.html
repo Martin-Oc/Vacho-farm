@@ -27,8 +27,8 @@
                 <div class="navbar-links">
                     <a class="navbar-link" href="./index.html">Domov</a>
                     <a class="navbar-link" href="./Co-ponukame.html">Čo ponúkame</a>
-                    <a class="navbar-link" href="./O-pestovani.html">O prestovaní</a>
                     <a class="navbar-link" href="./Galeria.html">Galéria</a>
+                    <a class="navbar-link" href="./objednavky.html">Obchod</a>
                 </div>
                 <div class="nav-header">
                     <button class="nav-btn" id="nav-btn">
@@ -57,8 +57,8 @@
              <div class="sidebar-links">
                 <a class="sidebar-link" href="./index.html">Domov</a>
                 <a class="sidebar-link" href="./Co-ponukame.html">Čo ponúkame</a>
-                <a class="sidebar-link" href="./O-pestovani.html">O prestovaní</a>
                 <a class="sidebar-link" href="./Galeria.html">Galéria</a>
+                <a class="sidebar-link" href="./objednavky.html">Obchod</a>
              </div>
              <div class="social-media-links">
                 <a href="https://www.facebook.com/Kvety-Naty-663953343757806/" class="fab fa-facebook link" target="_blank"></a>
@@ -90,165 +90,178 @@
                         <div class="filtre-kvetov">
                             <input type="text" class="search" placeholder="Search...">
                             <h5 class="price-text">Price</h5>
-                            <input type="range" class="price-filter" min="0" value="0.5€" max="1€">
+                            <input type="range" class="price-filter" min="0€" value="0.5€" max="1€">
+                            <div class="price-filter-range">
+                                <p class="price-filter-value">0€</p>
+                                <p class="price-filter-value-zmena">0.5€</p>
+                                <p class="price-filter-value">1€</p>
+                            </div>
                         </div>
 
                         <div class="objednaj-kvety">
                             
 
-                        <div class="jeden-kvet">
+                        <!-- <div class="jeden-kvet">
                             <img src="./fotky/slnecnice.jpg" alt="Kvet1" class="img" id="img-galeria">
                             <div class="product-flex">
                                 <div class="product-description">
-                                    <div class="kvety-text">Slnečnice</div>
+                                    <h1 class="kvety-text">Slnečnice</h1>
                                     <p class="price">0,05€/ks</p>
                                 </div>
     
-                                <input type="number" name="" id="" class="input-number" placeholder="0">
+                                <input type="number" name="" id="" min="0" class="input-number" placeholder="0">
                                 <div class="product-order">
                                     <button class="order-cart-btn">
                                         <i class="fa-solid fa-cart-shopping order-cart"></i>
                                     </button>
                                 </div>
                             </div>
-                            
+                            <div class="error-message"></div>
                         </div>
 
                         <div class="jeden-kvet">
                             <img src="./fotky/tulipany.JPG" alt="Kvet2" class="img" id="img-galeria">
                             <div class="product-flex">
                                 <div class="product-description">
-                                    <div class="kvety-text">Tulipány</div>
+                                    <h1 class="kvety-text">Tulipány</h1>
                                     <p class="price">0,05€/ks</p>
                                 </div>
     
-                                <input type="number" name="" id="" class="input-number" placeholder="0">
+                                <input type="number" name="" id="" min="0" class="input-number" placeholder="0">
                                 <div class="product-order">
                                     <button class="order-cart-btn">
                                         <i class="fa-solid fa-cart-shopping order-cart"></i>
                                     </button>
                                 </div>
                             </div>
+                            <div class="error-message"></div>
                         </div>
                             
                         <div class="jeden-kvet">
                             <img src="./fotky/papulky.JPG" alt="Kvet3" class="img" id="img-galeria">
                             <div class="product-flex">
                                 <div class="product-description">
-                                    <div class="kvety-text">Papulky</div>
+                                    <h1 class="kvety-text">Papulky</h1>
                                     <p class="price">0,05€/ks</p>
                                 </div>
     
-                                <input type="number" name="" id="" class="input-number" placeholder="0">
+                                <input type="number" name="" id="" min="0" class="input-number" placeholder="0">
                                 <div class="product-order">
                                     <button class="order-cart-btn" >
                                         <i class="fa-solid fa-cart-shopping order-cart"></i>
                                     </button>
                                 </div>
                             </div>
+                            <div class="error-message"></div>
                         </div>
                         
                         <div class="jeden-kvet">
                             <img src="./fotky/panicum.jpg" alt="Kvet3" class="img" id="img-galeria">
                             <div class="product-flex">
                                 <div class="product-description">
-                                    <div class="kvety-text">Panicum</div>
+                                    <h1 class="kvety-text">Panicum</h1>
                                     <p class="price">0,05€/ks</p>
                                 </div>
     
-                                <input type="number" name="" id="" class="input-number" placeholder="0"> 
+                                <input type="number" name="" id="" min="0" class="input-number" placeholder="0"> 
                                 <div class="product-order">
                                     <button class="order-cart-btn">
                                         <i class="fa-solid fa-cart-shopping order-cart"></i>
                                     </button>
                                 </div>
                             </div>
+                            <div class="error-message"></div>
                         </div>
                         
                         <div class="jeden-kvet">
-                            <img src="./fotky/liziantus.JPG" alt="Kvet3" class="img" id="img-galeria">
+                            <img src="./fotky/pivonky.JPG" alt="Kvet3" class="img" id="img-galeria">
                             <div class="product-flex">
                                 <div class="product-description">
-                                    <div class="kvety-text">Liziantus</div>
+                                    <h1 class="kvety-text">Pivonky</h1>
                                     <p class="price">0,05€/ks</p>
                                 </div>
     
-                                <input type="number" name="" id="" class="input-number" placeholder="0">
+                                <input type="number" name="" id="" min="0" class="input-number" placeholder="0">
                                 <div class="product-order">
                                     <button class="order-cart-btn">
                                         <i class="fa-solid fa-cart-shopping order-cart"></i>
                                     </button>
                                 </div>
                             </div>
+                            <div class="error-message"></div>
                         </div>
                         
                         <div class="jeden-kvet">
                             <img src="./fotky/limonky.jpg" alt="Kvet3" class="img" id="img-galeria">
                             <div class="product-flex">
                                 <div class="product-description">
-                                    <div class="kvety-text">Limonky</div>
+                                    <h1 class="kvety-text">Limonky</h1>
                                     <p class="price">0,05€/ks</p>
                                 </div>
     
-                                <input type="number" name="" id="" class="input-number" placeholder="0">
+                                <input type="number" name="" id="" min="0" class="input-number" placeholder="0">
                                 <div class="product-order">
                                     <button class="order-cart-btn">
                                         <i class="fa-solid fa-cart-shopping order-cart"></i>
                                     </button>
                                 </div>
                             </div>
+                            <div class="error-message"></div>
                         </div>
                         
                         <div class="jeden-kvet">
                             <img src="./fotky/dalie.jpg" alt="Kvet3" class="img" id="img-galeria">
                             <div class="product-flex">
                                 <div class="product-description">
-                                    <div class="kvety-text">Dálie</div>
+                                    <h1 class="kvety-text">Dálie</h1>
                                     <p class="price">0,05€/ks</p>
                                 </div>
     
-                                <input type="number" name="" id="" class="input-number" placeholder="0">
+                                <input type="number" name="" id="" min="0" class="input-number" placeholder="0">
                                 <div class="product-order">
                                     <button class="order-cart-btn">
                                         <i class="fa-solid fa-cart-shopping order-cart"></i>
                                     </button>
                                 </div>
                             </div>
+                            <div class="error-message"></div>
                         </div>
 
                         <div class="jeden-kvet">
                             <img src="./fotky/celosia.jpg" alt="Kvet3" class="img" id="img-galeria">
                             <div class="product-flex">
                                 <div class="product-description">
-                                    <div class="kvety-text">Celósie</div>
+                                    <h1 class="kvety-text">Celósie</h1>
                                     <p class="price">0,05€/ks</p>
                                 </div>
     
-                                <input type="number" name="" id="" class="input-number" placeholder="0">
+                                <input type="number" name="" id="" min="0" class="input-number" placeholder="0">
                                 <div class="product-order">
                                     <button class="order-cart-btn">
                                         <i class="fa-solid fa-cart-shopping order-cart"></i>
                                     </button>
                                 </div>
                             </div>
+                            <div class="error-message"></div>
                         </div>
                         
                         <div class="jeden-kvet">
                             <img src="./fotky/astra.jpg" alt="Kvet3" class="img" id="img-galeria">
                             <div class="product-flex">
                                 <div class="product-description">
-                                    <div class="kvety-text">Astra</div>
+                                    <h1 class="kvety-text">Astra</h1>
                                     <p class="price">0,05€/ks</p>
                                 </div>
     
-                                <input type="number" name="" id="" class="input-number" placeholder="0">
+                                <input type="number" name="" id=""  min="0" class="input-number" placeholder="0">
                                 <div class="product-order">
                                     <button class="order-cart-btn">
                                         <i class="fa-solid fa-cart-shopping order-cart"></i>
                                     </button>
                                 </div>
                             </div>
-                        </div>
+                            <div class="error-message"></div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -302,7 +315,52 @@
                         </div>
                     </footer>
                     <!-- end of footer -->
+                    <!-- cart -->
+                    <aside class="sidebar-overlay">
+                        <div class="sidebar-cart" id="sidebar-icon">
+
+                                <div class="sidebar-title title">
+                                    <button class="close-btn-cart" id="close-btn-cart">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                    <H2>Košík</H2>
+                                </div>
+
+                                <div class="product-cart-section">
+                                    <!-- <div class="item">
+                                        <img src="./fotky/slnecnice.JPG" alt="" class="cart-image">
+                                        <div class="remove-btn">
+                                            <h1 class="popis">Slnečnice</h1>
+                                            <h4 class="price">0,05€/ks</h4>
+                                            <button class="remove-item">Vymazať</button>
+                                        </div>
+                                        <div>
+                                            <button class="cart-item-increase-btn">
+                                                <i class="fas fa-chevron-up"></i>
+                                              </button>
+                                            <h1 class="suma">2</h1>
+                                            <button class="cart-item-decrease-btn">
+                                                <i class="fas fa-chevron-down"></i>
+                                              </button>
+                                        </div>
+                                    </div> -->
+                                </div>
+
+                                <div class="product-total">
+                                    <div class="product-total-text">
+                                        <h1 class="total">Celková suma:  </h1>
+                                        <h1 class="total-price">0€</h1>
+                                    </div>
+                                    <button class="submit-btn">
+                                        Objednať
+                                    </button>
+                                </div>
+
+                         </div>
+                    </aside>
+                    <!-- cart -->
 
             <script type="module" src="./objednavky.js"></script>
+            <script type="module" src="./objednavky/makeOrder.js"></script>
 </body>
 </html>
