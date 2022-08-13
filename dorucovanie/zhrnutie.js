@@ -35,7 +35,9 @@ const form = document.querySelector(".form-zhrnutie")
 
 form.addEventListener("submit",(e)=>{
     e.preventDefault()
-
+    sessionStorage.removeItem("data")
+    sessionStorage.removeItem("produkt")
+    window.location.href = "UspeneOdoslanie.html"
 })
 
 
