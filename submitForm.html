@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacho Farm</title>
+
+   <!-- font-awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link
+   rel="stylesheet"
+   href="./fontawesome-free-5.12.1-web/css/all.min.css"/>
+ <!-- css -->
+ <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="navbar">
+            <div class="nav-center">
+                <div class="icon">
+                    <H2>Vacho <span>Farm</span></H2>
+                </div>
+            </div>
+            <div class="nav-center">
+                <div class="navbar-links">
+                    <a class="navbar-link" href="./index.html">Domov</a>
+                    <a class="navbar-link" href="./Co-ponukame.html">Čo ponúkame</a>
+                    <a class="navbar-link" href="./Galeria.html">Galéria</a>
+                    <a class="navbar-link" href="./objednavky.html">Obchod</a>
+                </div>
+                <div class="nav-header">
+                    <button class="nav-btn" id="nav-btn">
+                        <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div> 
+     </nav>
+    <!-- end of navbar -->
+
+     <!-- choosebar -->
+     <!-- <div class="choosebar-section">
+        <div class="choosebar submit-choosebar">
+            <a href="./objednavky.html" class="choose-btn active2">Nákup</a>
+            <a href="./submitForm.html" class="choose-btn">Doručovacie údaje</a>
+            <a href="" class="choose-btn">Zhrnutie</a>
+            <a href="" class="choose-btn">Odoslaná objednávka</a>
+        </div>
+    </div>
+    <div class="skuska"></div> -->
+    <!-- end choosebar -->
+
+    <!-- form -->
+<section class="dorucivacie-udaje">
+    <div class="center">
+        <div class="title">
+            <h1>Doručovacie údaje</h1>
+        </div>
+        <form action="" class="form">
+            <div class="form">
+                <div class="udaje">
+                    <div class="udaje-osoba">
+                        <div class="dorucovacie-udaje">
+                         <label for=""  class="label-title">Osobné údaje</label>
+                         <label for="" class="formLabel">Meno</label>
+                         <input type="text" name="meno" id="Meno"  required class="formInput"><br>
+                         <label for="" class="formLabel">Priezvisko</label>
+                         <input type="text" id="Priezvisko" name="priezvisko" required class="formInput"><br>
+                            <div class="firma hide">
+                                <label for="" class="label-title firma-title">Fakturačné údaje firmy</label>
+                                <label for="" class="formLabel">Názov firmy</label>
+                                <input type="text" disabled id="Firma"name="PSC-firma" required class="formInput"><br>
+                            </div>
+                         <label for="" class="formLabel">Ulica, p.č.</label>
+                         <input type="text" id="Ulica" name="ulica" required class="formInput"><br>
+                         <label for="" class="formLabel">Mesto</label>
+                         <input type="text" id="Mesto" name="mesto" required class="formInput"><br>
+                         <label for="email" class="formLabel">PSČ</label>
+                         <input type="text" id="PSC"  name="PSC"required class="formInput"><br>
+                            <div class="inaAdresa hide">
+                                <label for="" class="label-title">Doručovacia adresa</label>
+                                <label for="" class="formLabel">Ulica, p.č.</label>
+                                <input type="text" disabled id="Ulica-DA" name="ulica" required class="formInput"><br>
+                                <label for="" class="formLabel">Mesto</label>
+                                <input type="text" disabled  id="Mesto-DA" name="mesto"  required class="formInput"><br>
+                                <label for="email" class="formLabel">PSČ</label>
+                                <input type="text" id="PSC-DA"  disabled name="PSC-DA" required class="formInput"><br>
+                            </div>
+                        
+                        </div>
+                      <div class="Kontakt">
+                        <label for="" class="label-title">Kontaktná adresa</label>
+                           <label for="email" class="formLabel">Email</label>
+                           <input type="email" id="Email" name="email" name="email" required class="formInput">  <br>
+                           <div class="phone-number">
+                            <div class="backround"></div>
+                               <label for="phone" class="formLabel">Telefónne číslo</label> 
+                               <p  class="predvolba">+421</p>
+                               <input type="tel" id="Phone" name="telefon" name="phone" pattern="\d{9}" required class="formInput telCislo"><br>
+                           </div>
+                           <div class="firma hide">
+                            <label for="" class="formLabel">IČO</label>
+                            <input  disabled type="text" name="ICO" id="ICO" placeholder="IČO" required class="formInput"><br>
+                            <label for="" class="formLabel">DIČ</label>
+                            <input  disabled type="text" id="DIC" name="DIC" placeholder="DIČ" required class="formInput"><br>
+                           </div>
+                     </div>
+                    </div>
+                    <input type="checkbox" id="firma" name="firma" class="checkbox firmacheckbox">
+                    <label for="firma">Firma</label><br>
+                    <input type="checkbox" id="inaAdresa" name="inaAdresa" class="checkbox inaAdresa">
+                    <label for="inaAdresa">Doručenie na inú adresu</label><br>
+                
+                <div class="submit-buttons">
+                    <a class="arrow-back odoslať" href="./objednavky.html"><i class="fa-solid fa-chevron-left arrow-back"></i>
+                        Návrat</a>
+                    <input type="submit" class="odoslať" value="Pokračuj">
+                </div>
+
+        </form>
+    </div>
+</section>
+<!-- end of form -->
+
+     <!-- sidebar -->
+     <aside class="sidebar" id="sidebar">
+         <div class="sidebar-section">
+             <div class="sidebar-title title">
+                 <button class="close-btn" id="close-btn">
+                <i class="fas fa-times"></i>
+                 </button>
+                 <div class="nav-center sidebaricon">
+                    <div class="icon">
+                        <H2>Vacho <span>Farm</span></H2>
+                    </div>
+                </div>
+             </div>
+             <div class="sidebar-links">
+                <a class="sidebar-link" href="./index.html">Domov</a>
+                <a class="sidebar-link" href="./Co-ponukame.html">Čo ponúkame</a>
+                <a class="sidebar-link" href="./Galeria.html">Galéria</a>
+                <a class="sidebar-link" href="./objednavky.html">Obchod</a>
+             </div>
+             <div class="social-media-links">
+                <a href="https://www.facebook.com/Kvety-Naty-663953343757806/" class="fab fa-facebook link" target="_blank"></a>
+                <a href="https://www.instagram.com/kvetynaty/" class="fab fa-instagram link"target="_blank" ></a>
+             </div>
+         </div>
+     </aside>
+     <!-- end of sidebar -->
+
+
+            
+            <!-- footer -->
+                    <footer class="footer-down">
+                        <div class="footer-section">
+                            <div class="footer-divs">
+        
+                            <div class="footer-kontakt">
+                                <h3>Kontaktujte nás</h3>
+                                <p><span>Email:</span></p>
+                                <p>kvetynaty@gmail.com</p>
+                                <p><span>Tel. číslo:</span></p>
+                                <p>+421.......</p>
+                            </div>
+        
+                            <div class="line2"></div>
+        
+                            <div class="footer-kontakt">
+                                <h3>Nájdete nás na</h3>
+                                <div>
+                                        <a href="https://www.facebook.com/Kvety-Naty-663953343757806/" class="fab fa-facebook link" target="_blank"></a>
+                                        <a href="https://www.facebook.com/Kvety-Naty-663953343757806/" class="link-text" target="_blank">Facebook</a>
+                                </div>
+                                <div>
+                                    <a href="https://www.instagram.com/kvetynaty/" class="fab fa-instagram link"target="_blank" ></a>
+                                    <a href="https://www.instagram.com/kvetynaty/" class="link-text instagram"target="_blank" >Instagram</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line-horizontal"></div>
+                        <div class="copyright-section">
+                            <p class="copyright">Copyright <span>&#169;</span> <span id="date"></span> </p>
+                            <p class="copyright">Created by Martin O.</p>
+                        </div>
+        
+                        </div>
+                    </footer>
+                    <!-- end of footer -->
+                   
+
+            <script type="module" src="./dorucovanie/dorucovanie.js"></script>
+            
+</body>
+</html>

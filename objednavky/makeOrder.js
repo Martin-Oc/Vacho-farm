@@ -10,6 +10,9 @@ import prepocitaj from "./prepocitajSumu.js"
     const orderCartBtn = document.querySelectorAll(".order-cart-btn")
     let arrayofAddedObjects = []
     var deletedName
+    const error = document.createElement("div")
+    error.classList.add("error-message2")
+    error.textContent = "Vyberte produkt!"
 
 const objednejKvetySetion = document.querySelector(".objednaj-kvety")
 
@@ -34,48 +37,18 @@ if(e.target.classList.contains("order-cart")){
         updateCart(arrayofAddedObjects)
         prepocitaj(arrayofAddedObjects)
         toggleCart()
-
+        error.remove()
         //productShopingCart.parentElement.previousElementSibling.value = ""
        
     }
 }
 })
 
-/*
-orderCartBtn.forEach((element)=>{
-    element.addEventListener("click",(e)=>{
-        console.log(element);
-        let productShopingCart = e.currentTarget
-        let insertedValue = productShopingCart.parentElement.previousElementSibling.value
-        let errormessage = productShopingCart.parentElement.parentElement.nextElementSibling
-        insertedValue = parseInt(insertedValue)
-        if(insertedValue <= 0 || isNaN(insertedValue)){
-            insertedValue = 0
-            errormessage.textContent = "Zadaj kladnú hodnotu"
-        }else{
-            errormessage.textContent = ""
-            let image = productShopingCart.parentElement.parentElement.previousElementSibling.src
-            let name = productShopingCart.parentElement.previousElementSibling.previousElementSibling.firstElementChild.textContent
-            let price = productShopingCart.parentElement.previousElementSibling.previousElementSibling.lastElementChild.textContent
-            let singleObject = {name,price,image,insertedValue}
-            
-            prepocitajPridaneMnozstvo(arrayofAddedObjects, singleObject)
-            console.log(arrayofAddedObjects);
-            updateCart(arrayofAddedObjects)
-            prepocitaj(arrayofAddedObjects)
-            toggleCart()
-
-            //productShopingCart.parentElement.previousElementSibling.value = ""
-           
-        }
-
-    })
-})*/
 
 const cartSection = document.querySelector(".product-cart-section")
 cartSection.addEventListener("click",(e)=>{
     const target = e.target
-    console.log(target);
+
     if(target.classList.contains("remove-item")){
         arrayofAddedObjects = DeleteItem(target,arrayofAddedObjects) 
         prepocitaj(arrayofAddedObjects) 
@@ -108,8 +81,8 @@ function prepocitajPridaneMnozstvo(array,object){
             if (element.name == object.name){
                 if (element.name == deletedName)
                 {
-                    element.insertedValue = 0
-                    deletedName = ""
+                  element.insertedValue = 0
+                  deletedName = ""
                 }
                  objectExist = true
                  firstPush = false
@@ -121,9 +94,6 @@ function prepocitajPridaneMnozstvo(array,object){
         array.forEach((element) =>{
 
             if (element.name == object.name){
-                console.log("element", element);
-                console.log("element-value", element.insertedValue);
-                console.log("object-value", object.insertedValue);
                 element.insertedValue += object.insertedValue
             }
         })
@@ -133,6 +103,19 @@ function prepocitajPridaneMnozstvo(array,object){
     }
 }
 
+const objednajBTN = document.querySelector(".submit-btn")
+const produktTotal = document.querySelector(".product-total")
+const cena = document.querySelector(".total-price")
 
+objednajBTN.addEventListener("click",(e)=>{
+    if(arrayofAddedObjects == 0){
+        e.preventDefault()
+        produktTotal.appendChild(error)
+        //cartSection.innerHTML = `<div class="error-message">Vyber produkt!</div>`
+    }else{
+        sessionStorage.setItem("produkt", JSON.stringify(arrayofAddedObjects))
+    }
+
+})
 
 export default arrayofAddedObjects

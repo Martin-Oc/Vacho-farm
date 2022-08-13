@@ -4,7 +4,7 @@ import arrayofAddedObjects from "./makeOrder.js";
 const totalPrice = document.querySelector(".total-price")
 
 function DeleteItem(e, array){
-    console.log(e);
+
     const name = e.previousElementSibling.previousElementSibling.textContent
     array = array.filter((element)=>{
         element.insertedValue == 0
