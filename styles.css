@@ -5,7 +5,8 @@
 }
 
 :root {
-  --font-family: "Oleo Script Swash Caps", cursive;
+  /* --font-family: "Oleo Script Swash Caps", cursive; */
+  font-family: 'Alice', serif;
   --font-size: 2rem;
 }
 
@@ -244,7 +245,7 @@ border-radius: 10px;
 h2 {
   letter-spacing: 5px;
   color: black;
-  font-family: "Oleo Script Swash Caps", cursive;
+ font-family: 'Alice', serif;
 }
 .header-title h1 {
   line-height: 5rem;
